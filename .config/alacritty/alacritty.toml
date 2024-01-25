@@ -1,0 +1,126 @@
+import = ["/home/wizard/.cache/wal/colors-alacritty.yml"]
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# [colors.bright]
+# black = "0xa6896b"
+# blue = "0xF35645"
+# cyan = "0xFAD32F"
+# green = "0xEB3247"
+# magenta = "0xF6A73B"
+# red = "0x5F4149"
+# white = "0xeec49a"
+# yellow = "0xBC4349"
+
+# [colors.cursor]
+# cursor = "0xeec49a"
+# text = "0x0a1124"
+
+# [colors.normal]
+# black = "0x0a1124"
+# blue = "0xF35645"
+# cyan = "0xFAD32F"
+# green = "0xEB3247"
+# magenta = "0xF6A73B"
+# red = "0x5F4149"
+# white = "0xeec49a"
+# yellow = "0xBC4349"
+
+# [colors.primary]
+# background = "0x23221F"
+# foreground = "0xeec49a"
+
+[cursor]
+style = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12
+
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+
+[font.bold_italic]
+family = "JetBrains Mono Nerd Font"
+# size = 12.0
+
+[font.italic]
+family = "JetBrains Mono Nerd Font"
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/fish"
+
+[window]
+decorations = "full"
+decorations_theme_variant = "Dark"
+dynamic_padding = false
+opacity = 0.8
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 100
+lines = 30
+
+[window.padding]
+x = 10
+y = 10
+

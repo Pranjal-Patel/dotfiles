@@ -1,0 +1,48 @@
+#!/bin/sh
+# cpu(){
+#     read cpu a b c previdle rest < /proc/stat
+#     prevtotal=$((a+b+c+previdle))
+#     sleep 0.5
+#     read cpu a b c idle rest < /proc/stat
+#     total=$((a+b+c+idle))
+#     cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+#     echo -n " $cpu%"
+# }
+
+
+cpu(){
+    read cpu a b c previdle rest < /proc/stat
+    prevtotal=$((a+b+c+previdle))
+    sleep 0.5
+    read cpu a b c idle rest < /proc/stat
+    total=$((a+b+c+idle))
+    cpu_percentage=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+
+    # Calculate the number of bars to display
+    # bars=$((cpu_percentage / 10))
+
+    # # Create the progress bar
+    # progress="["
+    # for ((i=0; i<10; i++)); do
+    #     if [ "$i" -lt "$bars" ]; then
+    #         progress+="|"
+    #     else
+    #         progress+=" "
+    #     fi
+    # done
+    # progress+="]"
+
+    # echo -n "$progress $cpu_percentage% "
+    echo -n " $cpu_percentage% "
+}
+
+fan(){
+  echo -n 󰈐 $(sensors | grep cpu_fan | linesplit ' ' 1) RPM
+}
+
+temp(){
+  echo -n 󰏈 $(sensors | grep 'Core 0' | linesplit ' ' 2 | cut -b 2- | linesplit '.' 0)
+}
+
+echo "$(cpu) $(temp)C $(fan)"
+

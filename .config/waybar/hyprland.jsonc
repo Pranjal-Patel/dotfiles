@@ -1,0 +1,38 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 20,
+    "margin-top": 10,
+    "margin-right": 10,
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "modules-left": [
+        // "custom/launch",
+        "hyprland/workspaces",
+        "custom/separator_r",
+        // "custom/mpris",
+        "custom/cpu",
+    ],
+    "modules-center": [
+        "custom/separator_l",
+        "hyprland/window",
+        "custom/separator_r"
+    ],
+    "modules-right": [
+        "memory",
+        "disk",
+        "custom/separator_l",
+        "battery",
+        "idle_inhibitor",
+        "network",
+        "pulseaudio",
+        "tray",
+        "clock",
+    ],
+
+    "include": ["/home/wizard/.config/waybar/modules.jsonc"] // Include the module config
+}
