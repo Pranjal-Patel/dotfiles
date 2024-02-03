@@ -11,12 +11,14 @@
     "margin-left": 10,
     "margin-bottom": 0,
     "modules-left": [
-        // "custom/launch",
+        "custom/launch",
         "hyprland/workspaces",
         "custom/separator_r",
-        // "custom/mpris",
-        "custom/cpu",
-    ],
+        "custom/cpu"
+        // "custom/media_previous",
+        // "custom/media_play",
+        // "custom/media_next"
+   ],
     "modules-center": [
         "custom/separator_l",
         "hyprland/window",

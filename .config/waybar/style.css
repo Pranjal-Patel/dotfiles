@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url("colors-main.css");
 
 * {
     border: none;
@@ -55,12 +55,14 @@ tooltip {
     padding-top: 0px;
     border-top: solid @workspace_active 3px;
     color: @workspace_active;
-    text-shadow: 0 0 4px @glow;
+    /* text-shadow: 0 0 4px @glow; */
+    text-shadow: none;
 }
 
 #workspaces button.focused {
     color: @workspace_active;
-    text-shadow: 0 0 4px @glow;
+    /* text-shadow: 0 0 4px @glow; */
+    text-shadow: none;
 }
 
 #workspaces button.urgent {
@@ -159,6 +161,7 @@ tooltip {
 #custom-media_previous,
 #custom-media_volume {
     padding: 0px 10px;
+    margin: 0;
     border-top: solid @media_player 3px;
 }
 
