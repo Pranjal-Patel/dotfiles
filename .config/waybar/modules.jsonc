@@ -156,7 +156,7 @@
 
     "disk": {
         "interval": 30,
-        "format": "󰋊 {percentage_used}%   ",
+        "format": "󰋊 {percentage_used}%",
         "path": "/",
         "tooltip": true,
         "tooltip-format": "Disk - {used} used out of {total} on {path} ({percentage_used}%)",
@@ -165,7 +165,7 @@
 
     "memory": {
         "interval": 5,
-        "format": "    {used:0.1f}/{total:0.1f} GB",
+        "format": " {used:0.1f}/{total:0.1f} GB",
         "max-length": 20,
         "tooltip": true,
         "tooltip-format": "Memory - {used:0.1f}GB used",
@@ -181,7 +181,7 @@
     },
 
     "custom/cpu": {
-        "format": "    {}    ",
+        "format": "{}",
         "exec": "~/.config/waybar/scripts/cpu",
         "max-length": 50,
         "interval": 5,

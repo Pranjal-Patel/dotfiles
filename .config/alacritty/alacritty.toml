@@ -28,8 +28,8 @@ draw_bold_text_with_bright_colors = true
 # white = "0xeec49a"
 # yellow = "0xBC4349"
 
-# [colors.primary]
-# background = "0x23221F"
+[colors.primary]
+# background = "0x33322E"
 # foreground = "0xeec49a"
 
 [cursor]
@@ -109,7 +109,7 @@ program = "/usr/bin/fish"
 decorations = "full"
 decorations_theme_variant = "Dark"
 dynamic_padding = false
-opacity = 0.75
+opacity = 0.9
 title = "Alacritty"
 
 [window.class]

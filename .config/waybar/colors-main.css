@@ -1,7 +1,7 @@
 @import url("colors.css");
 
-@define-color base @color10;
-@define-color background alpha(@base, 0.5);
+@define-color base @background_alt;
+@define-color background alpha(@base, 1);
 @define-color background_alt alpha(@color0, 1);
 @define-color text @foreground;
 @define-color workspace_inactive alpha(@color10, 0.5);
