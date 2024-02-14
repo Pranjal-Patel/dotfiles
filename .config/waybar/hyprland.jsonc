@@ -11,7 +11,7 @@
     "margin-left": 10,
     "margin-bottom": 0,
     "modules-left": [
-        "custom/launch",
+        // "custom/launch",
         "hyprland/workspaces",
         "custom/separator_r",
         "custom/cpu"
