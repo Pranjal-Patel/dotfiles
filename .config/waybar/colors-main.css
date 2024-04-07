@@ -1,16 +1,16 @@
 @import url("colors.css");
 
-@define-color base @color0;
-@define-color background alpha(@base, 1.0);
-@define-color background_alt alpha(@base, 1.0);
+@define-color base alpha(@color0, 1.0);
+@define-color background @base;
+@define-color background_alt @base;
 @define-color text @foreground;
-@define-color workspace_inactive alpha(@color10, 0.5);
+@define-color workspace_inactive alpha(@text, 0.5);
 @define-color workspace_active @foreground;
 @define-color shadow #000000;
-/* @define-color glow alpha(#ffffff, 0); */
 @define-color text_alt @foreground;
 @define-color media_player @color15;
 @define-color monitor_resources @foreground;
+@define-color custom @foreground;
 @define-color idle_inhibit #fab387;
 @define-color urgent #a6e3a1;
 @define-color critical #F38BA8;

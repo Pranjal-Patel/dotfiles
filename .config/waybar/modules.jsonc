@@ -14,7 +14,7 @@
     "hyprland/window": {
         "format": "{}",
         "icon": false,
-        "max-length": 10
+        "max-length": 30
     },
 
     "sway/language": {
@@ -70,28 +70,10 @@
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace -1",
         "on-scroll-down": "hyprctl dispatch workspace +1",
-        "persistent_workspaces": {
+        "persistent-workspaces": {
             "*": 9
         },
         "format": "{icon}",
-
-
-       //  "format-icons": {
-       //      "1":  "",
-       //      "2":  "",
-       //      "3":  "",
-       //      "4":  "",
-       //      "5":  "",
-       //      "6":  "",
-       //      "7":  "",
-       //      "8":  "",
-       //      "9":  "x",
-       //      // "high-priority-named": [ "1", "2" ],
-       //      "urgent": "",
-       //      "focused": "",
-       //      "default": ""
-    	  // },        
-
         "format-icons": {
             "1": "󰖟",
             "2": "",
@@ -362,5 +344,27 @@
         "exec": "swaync-client -swb",
         "on-click": "sh -c 'sleep 0.1s; swaync-client -t -sw; sleep 0.1s'",
         "on-click-right": "swaync-client -d -sw"
-    }
+    },
+
+    "cava": {
+        "framerate": 30,
+    //     "autosens": 1,
+    //     "sensitivity": 100,
+        "bars": 10,
+    //     "lower_cutoff_freq": 50,
+    //     "higher_cutoff_freq": 10000,
+    //     "method": "pulse",
+        "source": "auto",
+    //     "stereo": true,
+    //     "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": true,
+    //     "waves": false,
+    //     "noise_reduction": 0.77,
+    //     "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+    //     "actions": {
+    //                "on-click-right": "mode"
+    //                }
+    },
 }

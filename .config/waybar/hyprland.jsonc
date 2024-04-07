@@ -5,7 +5,6 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 20,
     "margin-top": 10,
     "margin-right": 10,
     "margin-left": 10,
@@ -15,16 +14,17 @@
         "hyprland/workspaces",
         "custom/separator_r",
         "custom/cpu"
-        // "custom/media_previous",
         // "custom/media_play",
+        // "custom/mpris"
         // "custom/media_next"
-   ],
+    ],
     "modules-center": [
         "custom/separator_l",
         "hyprland/window",
         "custom/separator_r"
     ],
     "modules-right": [
+        // "cava",
         "memory",
         "disk",
         "custom/separator_l",

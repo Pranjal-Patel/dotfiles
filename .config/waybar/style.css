@@ -76,7 +76,7 @@ tooltip {
 }
 
 #tags {
-    background: @background_alt;
+    background: @base;
 }
 
 #tags button {
@@ -135,7 +135,7 @@ tooltip {
 #custom-separator_l,
 #custom-separator_r {
     font-size: 25px;
-    color: @background_alt;
+    color: @base;
 }
 
 #idle_inhibitor {
@@ -150,8 +150,8 @@ tooltip {
 #memory,
 #disk {
     padding: 0px 10px;
-    border-top: solid @monitor_resources 3px;
-    color: @monitor_resources;
+    /* border-top: solid @monitor_resources 3px; */
+    color: @custom;
 }
 
 #mpris,
@@ -162,12 +162,13 @@ tooltip {
 #custom-media_volume {
     padding: 0px 10px;
     margin: 0;
-    border-top: solid @media_player 3px;
+    /* border-top: solid @media_player 3px; */
 }
 
 #custom-cpu {
     padding: 0px 10px;
-    border-top: solid @media_player 3px;   
+    color: @custom;
+    /* border-top: solid @media_player 3px; */
 }
 
 #custom-date {
