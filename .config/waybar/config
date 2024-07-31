@@ -1,58 +1,45 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "left", // Waybar position (top|bottom|left|right)
-    "mod": "dock",
-    "height": 740, // Waybar height (to be removed for auto height)
+    // "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 36, // Waybar height (to be removed for auto height)
+    "width": 1300, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
-    "gtk-layer-shell": true,
-    // "margin-left": 10,
-    "margin-right": 0,
-    // "margin-top": 10,
-    // "margin-bottom": 10,
-    "modules-left": ["hyprland/workspaces"],
+    // Choose the order of the modules
+    "modules-left": ["custom/icon1", "custom/icon2", "custom/icon3"],
     "modules-center": [],
-    "modules-right": ["clock"],
-
-    // "hyprland/workspaces": {
-    //      "disable-scroll": true,
-    //      "all-outputs": true,
-    //      "warp-on-scroll": false,
-    //      "format": "{icon}",
-    //      "format-icons": {
-    //          "active": "",
-    //          "default": ""
-    //      }
-    // },
-
+    "modules-right": [ "hyprland/workspaces", "wlr/taskbar" ,"tray", "clock"],
+    // Modules configuration
     "hyprland/workspaces": {
-        "on-click": "activate",
-        "on-scroll-up": "hyprctl dispatch workspace -1",
-        "on-scroll-down": "hyprctl dispatch workspace +1",
-        "persistent-workspaces": {
-            "*": 9
-        },
-        "format": "{icon}",
-        "format-icons": {
-            "1": "󰖟",
-            "2": "",
-            "3": "",
-            "4": "󰙯",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "󰘴",
-            "10": "1",
-            "11": "2",
-            "12": "3",
-            "13": "4",
-            "14": "5",
-            "15": "6",
-            "16": "7",
-            "17": "8",
-            "18": "9"
-        }
+       "active-only": true
     },
+
+"custom/icon1": {
+    "format": "{}  ",
+    "tooltip": false,
+    "on-click": "google-chrome-stable",
+    "on-click-right": "google-chrome-stable"
+},
+
+"custom/icon2": {
+    "format": "{}  ",
+    "tooltip": false,
+    "on-click": "foot",
+    "on-click-right": "foot"
+},
+"custom/icon3": {
+    "format": "{}  ",
+    "tooltip": false,
+    "on-click": "emacs",
+    "on-click-right": "emacs"
+},
+
+"wlr/taskbar": {
+    "icon-size": 26,
+    "on-click": "activate",
+    "on-click-right": "minimize",
+    "format": ""
+    },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -111,9 +98,9 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%H\n%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<big>{:%Y%B}</big>\n<tt><small>{calendar}</small></tt>",
+	"format": "{:%H:%M }",
+        "format-alt": "{:%m%N%d}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -141,9 +128,9 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}",
-        "format-charging": " {icon}",
-        "format-plugged": " {icon}",
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",

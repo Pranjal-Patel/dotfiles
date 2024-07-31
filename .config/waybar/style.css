@@ -1,111 +1,112 @@
 @import url("colors-main.css");
 
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "JetBrainsMono NF";
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 0px;
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono NF";
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0px;
 }
 
 window#waybar {
-    background: @background;
-    color: @text;
+  background: @background;
+  color: @text;
 }
 
 tooltip {
-    background: @base;
-    opacity: 0.8;
+  background: @base;
+  opacity: 0.8;
 }
 
 tooltip label {
-    color: @text;
+  color: @text;
 }
 
 tooltip {
-    animation-name: appear;
-    animation-duration: 0.1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+  animation-name: appear;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0.8;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
 }
 
 #workspaces button {
-    padding: 0px 6px;
-    padding-top: 3px;
-    color: @workspace_inactive;
-    text-shadow: none;
-    min-width: 20px;
+  padding: 0px 6px;
+  padding-top: 3px;
+  color: @workspace_inactive;
+  text-shadow: none;
+  min-width: 20px;
 }
 
 #workspaces {
-    background: @background_alt;
+  background: @background_alt;
 }
 
 #workspaces button.active {
-    padding-top: 0px;
-    border-top: solid @workspace_active 3px;
-    color: @workspace_active;
-    /* text-shadow: 0 0 4px @glow; */
-    text-shadow: none;
+  padding-top: 0px;
+  /* border-top: solid @workspace_active 3px; */
+  color: @workspace_active;
+  /* text-shadow: 0 0 4px @glow; */
+  text-shadow: none;
 }
 
 #workspaces button.focused {
-    color: @workspace_active;
-    /* text-shadow: 0 0 4px @glow; */
-    text-shadow: none;
+  color: @workspace_active;
+  /* text-shadow: 0 0 4px @glow; */
+  text-shadow: none;
 }
 
 #workspaces button.urgent {
-    color: @base;
-    background: @urgent;
-    transition: all 0.2s ease-in;
+  color: @base;
+  background: @urgent;
+  transition: all 0.2s ease-in;
 }
 
 #workspaces button:hover {
-    color: @text;
+  color: @text;
 }
 
 #tags {
-    background: @base;
+  background: @base;
 }
 
 #tags button {
-    padding: 0px 6px;
-    padding-top: 3px;
-    color: @workspace_inactive;
-    text-shadow: none;
-    min-width: 20px;
+  padding: 0px 6px;
+  padding-top: 3px;
+  color: @workspace_inactive;
+  text-shadow: none;
+  min-width: 20px;
 }
 
 #tags button.focused {
-    padding-top: 0px;
-    border-top: solid @workspace_active 3px;
-    color: @workspace_active;
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  padding-top: 0px;
+  border-top: solid @workspace_active 3px;
+  color: @workspace_active;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
 #tags button.occupied {
-    color: @workspace_active;
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  color: @workspace_active;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
 #tags button.urgent {
-    color: @base;
-    background: @urgent;
+  color: @base;
+  background: @urgent;
 }
 
 #tags button:hover {
-    color: @text;
+  color: @text;
 }
 
 #language,
@@ -128,30 +129,30 @@ tooltip {
 #workspaces,
 #idle_inhibitor,
 #backlight {
-    padding: 0px 10px;
-    background: @background_alt;
+  padding: 0px 10px;
+  background: @background_alt;
 }
 
 #custom-separator_l,
 #custom-separator_r {
-    font-size: 25px;
-    color: @base;
+  font-size: 25px;
+  color: @base;
 }
 
 #idle_inhibitor {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #idle_inhibitor.activated {
-    color: @idle_inhibit;
+  color: @idle_inhibit;
 }
 
 #cpu,
 #memory,
 #disk {
-    padding: 0px 10px;
-    /* border-top: solid @monitor_resources 3px; */
-    color: @custom;
+  padding: 0px 10px;
+  /* border-top: solid @monitor_resources 3px; */
+  color: @custom;
 }
 
 #mpris,
@@ -160,94 +161,96 @@ tooltip {
 #custom-media_next,
 #custom-media_previous,
 #custom-media_volume {
-    padding: 0px 10px;
-    margin: 0;
-    /* border-top: solid @media_player 3px; */
+  padding: 0px 10px;
+  margin: 0;
+  /* border-top: solid @media_player 3px; */
 }
 
 #custom-cpu {
-    padding: 0px 10px;
-    color: @custom;
-    /* border-top: solid @media_player 3px; */
+  padding: 0px 10px;
+  color: @custom;
+  /* border-top: solid @media_player 3px; */
 }
 
 #custom-date {
-    padding: 0px 15px;
-    border-bottom: solid @media_player 3px;
+  padding: 0px 15px;
+  border-bottom: solid @media_player 3px;
 }
 
 #custom-mpris,
 #mpris {
-    padding: 0px 5px;
-    color: @media_player;
+  padding: 0px 5px;
+  color: @media_player;
 }
 
 #custom-media_volume {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #custom-media_previous {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #custom-launch {
-    font-size: 20px;
-    text-shadow: 0px 0px 6px @shadow;
-    color: @text_alt;
-    padding: 0px 10px;
-    padding-right: 15px;
+  font-size: 20px;
+  text-shadow: 0px 0px 6px @shadow;
+  color: @text_alt;
+  padding: 0px 10px;
+  padding-right: 15px;
 }
 
 
 #custom-power_btn {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 #window {
-    min-width: 600px;
+  min-width: 600px;
 }
 
 #workspaces {
-    padding-right: 0px;
-    padding-left: 5px;
+  padding-right: 0px;
+  padding-left: 5px;
 }
 
 #pulseaudio {
-    color: @text_alt;
-    min-width: 52px;
+  color: @text_alt;
+  min-width: 52px;
 }
 
 #pulseaudio.microphone {
-    color: @media_player;
-    min-width: 52px;
+  color: @media_player;
+  min-width: 52px;
 }
 
 #battery,
 #battery.good,
 #battery.warning {
-    color: @text;
+  color: @text;
 }
 
 #battery.critical {
-    color: @critical;
+  color: @critical;
 }
 
 #battery.charging {
-    color: @text;
-    animation-name: battery;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  color: @text;
+  animation-name: battery;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes battery {
-    0% {
-        color: @healthy;
-    }
-    50% {    
-        color: @text;
-    }
-    100% {    
-        color: @healthy;
-    }
+  0% {
+    color: @healthy;
+  }
+
+  50% {
+    color: @text;
+  }
+
+  100% {
+    color: @healthy;
+  }
 }
