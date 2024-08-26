@@ -1,5 +1,10 @@
 # My dotfiles
 
-## Screenshots
-![screenshot 1](Screenshots/screenshot1.png)
-![screenshot 2](Screenshots/screenshot2.png)
+## Current Dwm config
+![dwm](Screenshots/dwm1.png)
+![dwm](Screenshots/dwm2.png)
+
+## Previous Hyprland config
+![hyprland](Screenshots/hyprland1.png)
+![hyprland](Screenshots/hyprland2.png)
+

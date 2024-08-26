@@ -1,0 +1,4 @@
+#!/bin/sh
+hdd=`df -h --output=used,size,pcent / | awk 'NR==2{print $1" / "$2" "$3}'`
+echo -e "󰋊 $hdd"
+

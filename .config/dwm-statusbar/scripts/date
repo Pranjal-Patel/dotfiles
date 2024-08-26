@@ -1,0 +1,3 @@
+#!/bin/sh
+dte="$(date +'%a, %b %d %I:%M %P')"
+echo -e "󰸗 $dte"
