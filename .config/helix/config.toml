@@ -1,0 +1,59 @@
+# theme = "catppuccin_mocha"
+
+theme = "gruvbox_mix_dark_hard"
+
+[editor]
+line-number = "relative"
+mouse = false
+idle-timeout = 100
+bufferline = "multiple"
+completion-trigger-len = 2
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "→"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = '▏'
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+[keys.normal]
+H = ":bp"
+L = ":bn"
+C-f = ":format"
+C-l = ":sh leptosfmt ."
+C-x = ":buffer-close"
+C-r = ":reload"
+"backspace" = { r = ":sh cargo r" }
